@@ -16,7 +16,6 @@ int main() {
 
         point p = { 1, 3 };
 
-	foo(a, b);
 	return 0;
 }
 
