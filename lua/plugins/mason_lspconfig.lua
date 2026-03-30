@@ -1,7 +1,7 @@
 vim.api.nvim_create_autocmd("FileType", {
         pattern = { "c", "cpp" },
         callback = function()
-                vim.keymap.set("n", "<leader>gh", ":ClangdSwitchSourceHeader<CR>", { buffer = true, desc = "Go to Header/Source" })
+                vim.keymap.set("n", "<leader>gh", "<cmd>LspClangdSwitchSourceHeader<CR>", { buffer = true, desc = "Go to Header/Source" })
         end,
 })
 
