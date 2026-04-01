@@ -12,13 +12,13 @@ return {
 			enable_transparency()
 		end
 	},
---	{
---		"nvim-lualine/lualine.nvim",
---		dependencies = {
---			"nvim-tree/nvim-web-devicons",
---		},
---		opts = {
---			theme = "rose-pine",
---		}
---	}
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+		opts = {
+			theme = "rose-pine",
+		}
+	}
 }
