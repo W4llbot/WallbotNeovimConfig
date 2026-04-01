@@ -2,8 +2,8 @@ vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.wrap = false
-vim.opt.scrolloff = 8
-vim.opt.sidescrolloff = 8
+vim.opt.scrolloff = 10
+vim.opt.sidescrolloff = 10
 
 vim.opt.shiftwidth = 8
 vim.opt.tabstop = 8
