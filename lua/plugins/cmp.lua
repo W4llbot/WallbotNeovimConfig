@@ -1,3 +1,5 @@
+vim.api.nvim_set_hl(0, 'BlinkCmpSignatureHelpActiveParameter', { link = 'Search' })
+
 return {
         "saghen/blink.cmp",
         version = "*", -- Use a release tag to download pre-built binaries
@@ -34,7 +36,8 @@ return {
                         --                             ["<C-up>"] = { "scroll_documentation_up", "fallback" },
                         --                             ["<C-down>"] = { "scroll_documentation_down", "fallback" },
                         --                     },
+
         },
-        opts_extend = { "sources.default" }
+        opts_extend = { "sources.default" },
 }
 
