@@ -58,10 +58,21 @@ return {
                         sources = {
                                 default = { 'lsp', 'path', 'snippets', 'buffer' },
                         },
+                        signature = {
+                                enabled = true,
+                                trigger = {
+                                        show_on_trigger_character = true,
+                                        show_on_insert_on_trigger_character = true,
+                                        show_on_keyword = true,
+                                },
+                                window = {
+                                        show_documentation = true,
+                                }
+                        },
                         completion = {
                                 documentation = {
                                         auto_show = true,          -- Show documentation for the selected item automatically
-                                        auto_show_delay_ms = 200,   -- Delay before showing the window
+                                        --auto_show_delay_ms = 200,   -- Delay before showing the window
                                 },
                         },
    --                     keymap = {

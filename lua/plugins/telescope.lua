@@ -23,12 +23,22 @@ return {
 	vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'TS: help tags' })
 	vim.keymap.set('n', '<leader>fi', builtin.git_files, { desc = 'TS: git files' })
 	vim.keymap.set('n', '<leader>fr', builtin.lsp_references, { desc = 'TS: references' })
-	vim.keymap.set('n', '<leader>fd', builtin.lsp_workspace_symbols, { desc = 'TS: workspace symbols' })
-	vim.keymap.set('n', '<leader>fw', builtin.lsp_document_symbols, { desc = 'TS: document symbols' })
+	vim.keymap.set('n', '<leader>fw', builtin.lsp_workspace_symbols, { desc = 'TS: workspace symbols' })
+	vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = 'TS: document symbols' })
 	vim.keymap.set('n', '<leader>fd', builtin.diagnostics, { desc = 'TS: diagnostics' })
 
         vim.keymap.set('n', '<leader>fc', function()
                 builtin.find_files({ cwd = vim.fn.stdpath('config') })
         end, { desc = 'Telescope find config files' })
+
+--        require('telescope').setup({
+--                pickers = {
+--                        find_files = {
+--                                hidden = true,
+--                                -- optional: disable .gitignore matching
+--                                -- no_ignore = true, 
+--                        }
+--                }
+--        })
     end
 }
